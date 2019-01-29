@@ -3,11 +3,11 @@
 ## 开始
 > npm install
 >
-> # 开启实时编译
+> #开启实时编译
 >
 > wepy build --watch
 >
-> # 编译整个项目
+> #编译整个项目
 >
 > wepy build
 
