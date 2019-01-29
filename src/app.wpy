@@ -1,0 +1,77 @@
+<script>
+import wepy from 'wepy';
+import 'wepy-async-function';
+
+export default class extends wepy.app {
+    // 对应 app.json 文件的配置
+    config = {
+        pages: ['pages/index'],
+        window: {
+            backgroundTextStyle: 'light',
+            navigationBarBackgroundColor: '#fff',
+            navigationBarTitleText: '小程序能力演示',
+            navigationBarTextStyle: 'black'
+        }
+    };
+
+    constructor() {
+        super();
+        this.use('requestfix');
+    }
+
+    globalData = {
+        //
+    };
+
+    onLaunch() {
+        //
+    }
+}
+</script>
+
+<style>
+html,
+body {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-family: -apple-system-font, 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 0px;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.page_hd {
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+}
+.page_hd > h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+.page_hd > .desc {
+    font-size: 14px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.page_bd {
+    margin-top: 30px;
+}
+.page_fd {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25px;
+}
+</style>

@@ -1,0 +1,28 @@
+<style>
+</style>
+<template>
+    <view class="container">
+        <view class="page_hd">
+            <h1>Hello World</h1>
+        </view>
+        <footer datetime="Jan 30, 2019"></footer>
+    </view>
+</template>
+
+<script>
+import wepy from 'wepy';
+import Footer from '../components/footer';
+
+export default class Index extends wepy.page {
+    config = {};
+    components = {
+        footer: Footer
+    };
+
+    data = {};
+    methods = {};
+
+    events = {};
+    onLoad() {}
+}
+</script>
